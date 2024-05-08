@@ -1,0 +1,16 @@
+# OS files
+.DS_Store
+
+# Vendor files
+/node_modules
+/vendor
+
+# Build files
+/index.dev.mjs
+
+# Cache and temporary files
+/.cache
+/.php-cs-fixer.cache
+/.phpunit.result.cache
+/tests/coverage
+/tests/*/tmp

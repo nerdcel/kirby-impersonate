@@ -1,0 +1,45 @@
+{
+  "name": "nerdcel/kirby-impersonate",
+  "description": "Impersonate kirby users in the panel",
+  "type": "kirby-plugin",
+  "keywords": [
+    "area",
+    "panel",
+    "kirby",
+    "administration"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nerdcel/kirby-impersonate#readme",
+  "authors": [
+    {
+      "name": "Marcel Hieke-Hecht",
+      "email": "office@marcelhieke.com",
+      "homepage": "https://marcelhieke.com"
+    }
+  ],
+  "require": {
+    "getkirby/composer-installer": "^1.2"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "@stable",
+    "getkirby/cms": "^4"
+  },
+  "scripts": {
+    "fix": "php-cs-fixer fix",
+    "dist": "composer install --no-dev --optimize-autoloader"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  },
+  "extra": {
+    "kirby-cms-path": false
+  },
+  "autoload": {
+    "psr-4": {
+      "Nerdcel\\KirbyImpersonate\\": "src"
+    }
+  }
+}

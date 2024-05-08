@@ -1,0 +1,23 @@
+{
+  "name": "kirby-impersonate",
+  "type": "module",
+  "private": true,
+  "packageManager": "npm@10.2.4",
+  "scripts": {
+    "dev": "kirbyup serve src/panel/index.js",
+    "build": "kirbyup src/panel/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier \"src/panel/**\" --write",
+    "release": "pnpm run build && bumpp --all"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.16.3",
+    "@unocss/eslint-plugin": "^0.59.4",
+    "autoprefixer": "^10.4.19",
+    "bumpp": "^9.4.1",
+    "eslint": "^9.2.0",
+    "kirbyup": "^3.1.5",
+    "prettier": "^3.2.5"
+  }
+}
