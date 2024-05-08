@@ -1,5 +1,3 @@
-![Kirby Punctuation Section](./.github/kirby-impersonate.png)
-
 # Kirby Impersonate Plugin
 
 This plugin provides a way to impersonate users in the Kirby Panel.
